@@ -1,0 +1,172 @@
+.bg1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+    background-position: 0,0%;
+}
+
+.bg2 {
+    width: 100%;
+    height: 52%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 0,0%;
+    background-image: url('../img/bg2.png');
+}
+
+.title {
+    width: 33%;
+    height: 3%;
+    position: absolute;
+    top: 7%;
+    left: 33.5%;
+}
+
+.text {
+    width: 75%;
+    height: 3%;
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+}
+
+.bar1 {
+    width: 33%;
+    height: 3%;
+    position: absolute;
+    top: 3.5%;
+    left: 0%;
+
+    animation-name: bar1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bar1 {
+    0% {
+        margin-left: -33%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+.bar2 {
+    width: 33%;
+    height: 3%;
+    position: absolute;
+    top: 3.5%;
+    right: 0%;
+
+    animation-name: bar2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bar2 {
+    0% {
+        margin-right: -33%;
+    }
+
+    100% {
+        margin-right: 0%;
+    }
+}
+
+.tape3_1{
+    width: 5%;
+    height: 15%;
+    position: absolute;
+    top: 29%;
+    left: 45%;
+}
+
+.tape3_2{
+    width: 5%;
+    height: 15%;
+    position: absolute;
+    top: 29%;
+    right: 42%;
+}
+
+.tape2 { 
+    width: 23%;
+    height: 23%;
+    position: absolute;
+    top: 44.4%;
+    left: 37.7%;
+}
+
+.tape2_2 { 
+    width: 23%;
+    height: 23%;
+    position: absolute;
+    top: 44.4%;
+    right: 19.2%;
+}
+
+.tape1_3 {
+    width: 50%;
+    height: 45%;
+    position: absolute;
+    top: 20.5%;
+    left: 25.5%;
+}
+
+.dot3 {
+    width: 2%;
+    height: 15%;
+    position: absolute;
+    top: 34%;
+    right: 11%;
+}
+
+.button1 {
+    width: 4.5%;
+    height: 4.5%;
+    position: absolute;
+    top: 47.9%;
+    left: 1%;
+}
+
+.button2 {
+    width: 4.5%;
+    height: 4.5%;
+    position: absolute;
+    top: 47.9%;
+    right: 1%;
+}
+
+.tapetape{}
+
+.tapetapetape{}
+
+
+.tapetape.move {
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 200s;
+}
+
+.tapetapetape.move {
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+
+@-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform:rotate(36000deg);}
+}
+
+@-webkit-keyframes moving {
+    0% {transform: translateX(-26px);}
+    50% {transform:translateX(3px);}
+    100% {transform: translateX(-26px);}
+}
